@@ -1,0 +1,45 @@
+.form {
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form form {
+    height: 70%;
+}
+.form label {
+    font-size: 20px;
+}
+input[type='text'], input[type='password'], input[type='mail'] {
+    padding: 5px;
+}
+input[type='submit'] {
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container-loading {
+    height: 10vh;
+}
+.c-input {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.c-input label {
+    font-weight: bold;
+
+}
+
+form a {
+    transition: 0.5s;
+    text-decoration: none;
+}
+form a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,128 @@
+#c-ui-msg {
+    width: 90%;
+    margin: 0 auto;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#msg-screen {
+    width: 80%;
+    height: 80%;
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 5px;
+}
+#cont-i-msg {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.i-msg {
+    width: 90%;
+    font-size: 14px;
+    padding: 5px;
+}
+.b-msg {
+    cursor: pointer;
+    padding: 10px 15px;
+    height: 100%;
+    border-radius: 30px;
+    outline: none;
+    background-color: cornflowerblue;
+    border: none;
+
+}
+.b-msg img {
+    width: 25px;
+}
+#notif {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 5px 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(219, 215, 215, 0.664);
+    border-radius: 30px;
+}
+.icon-users {
+    margin: 0 5px;
+}
+
+.icon-users img {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+
+}
+/* MESSAGE BOX */
+
+.c-msg-details-other {
+    animation: pop-msg-other 0.5s;
+    display: flex;
+    margin-bottom: 20px ;
+    flex-direction: row-reverse;
+}
+.c-msg-details-own {
+    animation: pop-msg-own 0.5s;
+    display: flex;
+    margin-bottom: 20px ;
+}
+.user-msg {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+
+}
+.user-msg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+.msg {
+    color: white;
+    padding: 10px 15px;
+    box-sizing: content-box;
+    position: relative;
+    display: inline-block;
+    max-width: 80%;
+
+}
+.ownMessage {
+    background-color:rgba(204, 38, 38, 0.712) ;
+    top: 20px;
+    left: 5px;
+    border-radius: 0 20px 20px 40px;
+}
+.otherMessage {
+    background-color:rgba(38, 104, 204, 0.712) ;
+    top: 20px;
+    right: 5px;
+    border-radius: 20px 0 40px 20px;
+}
+
+/* ANIM */
+
+@keyframes pop-msg-own{
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes pop-msg-other{
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
