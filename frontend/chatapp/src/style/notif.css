@@ -1,0 +1,12 @@
+#c-notif {
+    background-color: rgba(219, 215, 215, 0.664);
+}
+
+@media  screen and (max-width : 500px) {
+    h2 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+}

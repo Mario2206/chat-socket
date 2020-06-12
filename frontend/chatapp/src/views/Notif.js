@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 
+import "../style/notif.css"
+
 const Notif = ({router, data })=> {
 
     const [ sec, setSec ] = useState(5)
@@ -18,7 +20,7 @@ const Notif = ({router, data })=> {
     });
 
     return(
-        <div>
+        <div id="c-notif">
             <h2>{ldata.text}</h2>
             <h4>Cette page est temportaire. Vous allez être redirigé dans {sec} </h4>
         </div>
